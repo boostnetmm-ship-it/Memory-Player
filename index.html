@@ -117,7 +117,7 @@
         </div>
         
         <div class="h-8 border-t border-gray-100 flex items-center justify-center">
-            <span class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Memories</span>
+            <span class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Koeko & Baby</span>
         </div>
     </div>
 
@@ -137,7 +137,12 @@
         </div>
     </div>
 
-    <audio id="loveSong" loop preload="auto" crossorigin="anonymous">
+    <!-- Modified Audio Source to prioritize local files -->
+    <audio id="loveSong" loop preload="auto">
+        <!-- Prioritize local files -->
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.m4a" type="audio/mp4">
+        <!-- Fallback to online audio if local files are missing -->
         <source src="https://cdn.pixabay.com/audio/2024/01/16/audio_e2b992254f.mp3" type="audio/mpeg">
     </audio>
 
